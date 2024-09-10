@@ -3,7 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Resource Monitor</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Resource Monitor</h1>
+    <div id="root">
+      <div class="chart-container">
+        <h2>CPU Usage</h2>
+        <canvas id="cpu-chart"></canvas>
+        <p id="cpu-info"></p>
+        <!-- Display CPU info -->
+      </div>
+      <div class="chart-container">
+        <h2>Memory Usage</h2>
+        <canvas id="memory-chart"></canvas>
+        <p id="memory-info"></p>
+        <!-- Display memory info -->
+      </div>
+      <div class="chart-container">
+        <h2>Disk Usage</h2>
+        <canvas id="disk-chart"></canvas>
+        <p id="disk-info"></p>
+        <!-- Display disk info -->
+      </div>
+      <div class="chart-container">
+        <h2>Disk I/O</h2>
+        <p id="disk-io-info"></p>
+        <!-- Display disk I/O info -->
+      </div>
+      <div class="chart-container">
+        <h2>Network I/O</h2>
+        <canvas id="network-chart"></canvas>
+        <p id="network-info"></p>
+        <!-- Display network info -->
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
